@@ -14,7 +14,7 @@ module OmniAuth
           :authorize_path => '/oauth/authenticate',
           :realm => 'OmniAuth',
           :request_token_path => '/oauth/request_token',
-          :site => 'http://api.t.163.com',
+          :site => 'http://api.t.163.com'
         }
       end
 
@@ -27,7 +27,7 @@ module OmniAuth
 
       info do
         {
-          :nickname => raw_info['name'],,
+          :nickname => raw_info['name'],
           :name => raw_info['realName'],
           :location => raw_info['location'],
           :image => raw_info['profile_image_url'],
