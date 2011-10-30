@@ -32,7 +32,7 @@ module OmniAuth
           :location => raw_info['location'],
           :image => raw_info['profile_image_url'],
           :description => raw_info['description'],
-          :email => user_hash['email'],
+          :email => raw_info['email'],
           :urls => {
             'T163' => 'http://t.163.com'
           }
