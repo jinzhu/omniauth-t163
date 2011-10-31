@@ -8,7 +8,6 @@ module OmniAuth
       option :sign_in, true
       def initialize(*args)
         super
-        # taken from https://github.com/intridea/omniauth/blob/0-3-stable/oa-oauth/lib/omniauth/strategies/oauth/tqq.rb#L15-24
         options.client_options = {
           :access_token_path => '/oauth/access_token',
           :authorize_path => '/oauth/authenticate',
